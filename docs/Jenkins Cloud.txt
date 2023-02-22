@@ -2,7 +2,7 @@
 
 URL: http://34.122.136.109/
 
-Usuario		Password
+Username	Password
 user1		user1			
 user2		user2	
 user3		user3	
