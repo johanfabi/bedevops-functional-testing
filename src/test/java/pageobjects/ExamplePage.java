@@ -122,7 +122,7 @@ public class ExamplePage {
         System.out.println("Secure Area Message: " + welcomeMessage);
         String message = "Welcome to the Secure Area. When you are done click logout below.";
         Assert.assertEquals(welcomeMessage,message);
-        Thread.sleep(5000);
+        Thread.sleep(3000);
     }
 
     /**
