@@ -106,9 +106,9 @@ public class ExamplePage {
         inputUser.clear();
         inputUser.sendKeys(user);
 
-        WebElement inputPass = driver.findElement(By.id(pass));
+        WebElement inputPass = driver.findElement(By.id("password"));
         inputPass.clear();
-        inputPass.sendKeys("SuperSecretPassword!");
+        inputPass.sendKeys(pass);
 
         WebElement btnLogin = driver.findElement(By.xpath("//button[@type='submit']"));
         btnLogin.click();
