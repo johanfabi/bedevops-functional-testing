@@ -16,7 +16,7 @@ public class ExamplesSteps {
 
     @Given("Cargo el sitio web HerokuApp")
     public void cargoElSitioWebHerokuApp() throws MalformedURLException {
-        ExamplePage.openLocal("https://the-internet.herokuapp.com/login", "The Internet");
+        ExamplePage.openWithBrowserStack("https://the-internet.herokuapp.com/login", "The Internet");
     }
 
     @When("Escribo el usuario y password")
@@ -37,8 +37,8 @@ public class ExamplesSteps {
      */
 
     @Given("Cargo el sitio web Google")
-    public void cargoElSitioWebGoogle() {
-        ExamplePage.openLocal("https://www.google.com/", "Google");
+    public void cargoElSitioWebGoogle() throws MalformedURLException {
+        ExamplePage.openWithBrowserStack("https://www.google.com/", "Google");
     }
 
     @When("Escribo en el input de busqueda")
