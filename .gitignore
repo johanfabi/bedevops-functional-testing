@@ -1,8 +1,12 @@
+# Dependency directories
+./bedevops-functional-testing.iml
+
 # Directories
 target/
 
 # IDES directories
 .vscode/
 .idea/
+
 
 
