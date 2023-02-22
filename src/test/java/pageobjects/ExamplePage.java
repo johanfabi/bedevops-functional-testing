@@ -101,7 +101,7 @@ public class ExamplePage {
      */
 
     /* Login */
-    public static void login() {
+    public static void login() throws InterruptedException {
         WebElement inputUser = driver.findElement(By.id("username"));
         inputUser.clear();
         inputUser.sendKeys("tomsmith");
@@ -112,15 +112,17 @@ public class ExamplePage {
 
         WebElement btnLogin = driver.findElement(By.xpath("//button[@type='submit']"));
         btnLogin.click();
+        Thread.sleep(2000);
     }
 
     /* Validate login */
-    public static void validateLogin() {
+    public static void validateLogin() throws InterruptedException {
         WebElement secureArea = driver.findElement(By.xpath("//div[@id='content']/div/h4"));
         String welcomeMessage = secureArea.getText();
         System.out.println("Secure Area Message: " + welcomeMessage);
         String message = "Welcome to the Secure Area. When you are done click logout below.";
         Assert.assertEquals(welcomeMessage,message);
+        Thread.sleep(5000);
     }
 
     /**

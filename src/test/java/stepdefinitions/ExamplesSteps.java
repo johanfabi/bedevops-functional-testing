@@ -20,12 +20,12 @@ public class ExamplesSteps {
     }
 
     @When("Escribo el usuario y password")
-    public void escriboElUsuarioYPassword() {
+    public void escriboElUsuarioYPassword() throws InterruptedException {
         ExamplePage.login();
     }
 
     @Then("Valido login exitoso")
-    public void validoLoginExitoso() {
+    public void validoLoginExitoso() throws InterruptedException {
         ExamplePage.validateLogin();
         ExamplePage.quitDriver();
     }
