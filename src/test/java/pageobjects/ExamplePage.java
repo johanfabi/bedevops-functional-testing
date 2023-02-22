@@ -26,8 +26,8 @@ public class ExamplePage {
      ***************************************************************************************************
      */
 
-    // public static String user = System.getenv().get("USER");
-    // public static String pass = System.getenv().get("PASS");
+    public static String user = System.getenv().get("USER");
+    public static String pass = System.getenv().get("PASS");
     public static String tags = System.getenv().get("TAGS");
 
     /**
@@ -104,9 +104,9 @@ public class ExamplePage {
     public static void login() throws InterruptedException {
         WebElement inputUser = driver.findElement(By.id("username"));
         inputUser.clear();
-        inputUser.sendKeys("tomsmith");
+        inputUser.sendKeys(user);
 
-        WebElement inputPass = driver.findElement(By.id("password"));
+        WebElement inputPass = driver.findElement(By.id(pass));
         inputPass.clear();
         inputPass.sendKeys("SuperSecretPassword!");
 
